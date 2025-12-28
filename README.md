@@ -13,8 +13,9 @@ A modern, responsive React frontend scaffold for banking-style UIs. This project
 - Common scripts
 - Project structure
 - Build & deploy
-
-
+- Linting & formatting
+- Contributing
+- License & contact
 
 ## About
 Bank_modernApp is a React-based frontend starter for building banking or financial web applications. It focuses on modern tooling, a utility-first CSS approach (Tailwind), and fast HMR during development via Vite.
@@ -27,6 +28,7 @@ The repository shows these core technologies and versions (as declared in packag
 - Tailwind CSS (tailwindcss ^3.4.17)
 - PostCSS & Autoprefixer (postcss, autoprefixer)
 - ESLint + React plugins (eslint, eslint-plugin-react, eslint-plugin-react-hooks)
+- TypeScript typings for React (@types/react, @types/react-dom) included as dev deps
 - Node.js / npm for package management
 
 ## Features
@@ -88,5 +90,23 @@ Open src/ to see the React components and app entry (usually main.jsx / main.tsx
    - Deploy the contents of dist/ to any static hosting (Netlify, Vercel, GitHub Pages, S3 + CloudFront).
    - If SPA routing is used, ensure the server is configured to redirect unknown routes to index.html.
 
+## Linting & formatting
+- Run linter:
+  npm run lint
 
+Adjust rules in eslint.config.js. If you add Prettier or format scripts, add corresponding commands to package.json.
 
+## Environment variables
+Vite supports .env, .env.local, .env.production, etc. Use VITE_ prefixed keys for client-side env variables. Do not commit secrets — use deployment provider secrets.
+
+## Contributing
+Contributions are welcome. Suggested workflow:
+1. Fork the repo and create a branch for your change.
+2. Make changes, run lint/tests locally.
+3. Open a pull request with a clear description of changes.
+
+## License & contact
+Add a LICENSE file to the repository (e.g., MIT) if desired. For issues or questions, open an issue in this repository or contact the repository owner (Techultra55) via their GitHub profile.
+
+---
+This README was generated from the repository files (package.json, Vite, Tailwind and ESLint configs). It explicitly uses React as the frontend framework (React 18). For exact dependency versions and scripts, refer to Bank_modernApp/package.json.
